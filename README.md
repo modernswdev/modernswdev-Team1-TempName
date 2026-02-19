@@ -21,7 +21,7 @@ In today's world, there is so much media that is coming out that seem exciting o
   Users can mark media as watched, submit their own ratings, and add optional comments.
 
 -**Rating Source Breakdown**
-  Users can view individual rating sfrom each source (e.g., IMDb, Rotten Tomatoes)
+  Users can view individual ratings from each source (e.g., IMDb, Rotten Tomatoes)
 
 - **Encore Score**
   The platform will calculate a single Encore Score based on the ratings from multiple sources, to see if a movie is worth their time or money
