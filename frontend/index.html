@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<!--
+	Parallelism by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Encore</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+    /* Make the container tall enough for a movie poster ratio */
+    .item.thumb {
+        height: 450px !important; 
+    }
+
+    /* Force the link/box to fill that height (Notice the updated class name here) */
+    .item.thumb a.poster-link {
+        height: 100% !important;
+        display: block;
+        overflow: hidden;
+    }
+
+    /* Make the actual image fit inside without stretching or cutting */
+    .item.thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+        background-color: #000; 
+    }
+	#main { padding-top: 80px;padding-bottom: 80px; }
+	
+
+	/* Cinematic Navigation Buttons - Silver/Graphite Theme */
+    .movie-btn {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #aaa !important; /* Soft gray text */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: none;
+        border: 2px solid #444; /* Dark gray border */
+        border-radius: 30px; 
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        transition: all 0.3s ease; 
+        border-bottom: none; 
+    }
+
+    /* The sleek silver hover effect */
+    .movie-btn:hover {
+        background: #222;
+        border-color: #888; /* Turns lighter gray */
+        color: #fff !important; /* Text turns stark white */
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.15); /* Soft white/silver glow */
+        transform: scale(1.05); 
+    }
+
+    /* Solid color for the page you are currently on */
+    .movie-btn.active {
+        background: #333;
+        border-color: #666;
+        color: #fff !important;
+    }
+
+    /* Cinematic Search Bar Container */
+    .movie-search-wrapper {
+        display: flex;
+        background: rgba(0, 0, 0, 0.6); 
+        border-radius: 30px; 
+        padding: 5px 20px;
+        border: 2px solid #444; 
+        align-items: center;
+        width: 350px;
+        transition: all 0.3s ease;
+    }
+
+    /* The Glow Effect when hovering or typing */
+    .movie-search-wrapper:hover,
+    .movie-search-wrapper:focus-within {
+        border-color: #777; /* Lighter gray border */
+        background: rgba(20, 20, 20, 0.9);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Subtle silver aura */
+        transform: scale(1.02); 
+    }
+
+    /* The Input Text Area */
+    .movie-search-input {
+        background: transparent !important;
+        border: none !important;
+        color: #fff !important;
+        outline: none !important;
+        flex: 1;
+        box-shadow: none !important;
+        height: 35px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    /* Make the placeholder text look sleeker */
+    .movie-search-input::placeholder {
+        color: #666;
+        font-style: italic;
+    }
+
+    /* The Magnifying Glass */
+    .movie-search-icon {
+        color: #888; /* Gray icon by default */
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+    }
+
+    /* Make the icon turn white and grow on hover */
+    .movie-search-wrapper:hover .movie-search-icon {
+        transform: scale(1.2);
+        color: #fff;
+    }
+</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+    <header id="header" style="position: fixed; top: 0; left: 0; width: 100%; background: #222; color: #fff; padding: 1rem 2rem; z-index: 10000; display: flex; align-items: center; border-bottom: 2px solid #e50914;">
+    
+    <div style="flex: 1; display: flex; justify-content: flex-start;">
+        <h1 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px; text-transform: uppercase; white-space: nowrap; display: flex; align-items: center; gap: 10px;">
+            <span style="color: #e50914;">🎬</span> Encore
+        </h1>
+    </div>
+    
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        
+        <nav>
+            <ul class="actions" style="margin: 0; display: flex; gap: 20px;">
+                <li><a href="index.html" class="movie-btn active">Home</a></li>
+                <li><a href="details.html" class="movie-btn">Details</a></li>
+            </ul>
+        </nav>
+
+        <div class="movie-search-wrapper">
+            <input type="text" class="movie-search-input" placeholder="Search for movies...">
+            <span class="movie-search-icon">🔍</span>
+        </div>
+        
+    </div>
+
+    <div style="flex: 1;"></div>
+    
+</header>
+
+				<!-- Main -->
+					<section id="main">
+
+						<!-- Items -->
+							<div class="items">
+
+								
+
+								<article class="item thumb span-1">
+									<h2>The Godfather</h2>
+									<a href="details.html" class="poster-link"><img src="images/thumbs/01.png" alt=""></a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>The Dark Knight</h2>
+									<a href="details.html" class="poster-link"><img src="images/thumbs/02.png" alt=""></a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>Shrek</h2>
+									<a href="details.html" class="poster-link"><img src="images/thumbs/03.png" alt=""></a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>Spiderman 2</h2>
+									<a href="details.html" class="poster-link"><img src="images/thumbs/04.png" alt=""></a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>Star Wars</h2>
+									<a href="details.html" class="poster-link"><img src="images/thumbs/05.png" alt=""></a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>Jaws</h2>
+									<a href="details.html" class="poster-link"><img src="images/thumbs/06.png" alt=""></a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>Jurassic Park</h2>
+									<a href="details.html" class="poster-link"><img src="images/thumbs/07.png" alt=""></a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>Life of Pi</h2>
+									<a href="details.html" class="poster-link"><img src="images/thumbs/08.png" alt=""></a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>Back To The Future </h2>
+									<a href="details.html" class="poster-link"><img src="images/thumbs/16.png" alt=""></a>
+								</article>
+
+							</div>
+
+						<!-- Items -->
+							<div class="items">
+
+								<article class="item thumb span-3"><h2>Veer Zaara</h2><a href="details.html" class="poster-link"><img src="images/thumbs/09.png" alt=""></a></article>
+								<article class="item thumb span-1"><h2>Deewaar</h2><a href="details.html" class="poster-link"><img src="images/thumbs/10.png" alt=""></a></article>
+								<article class="item thumb span-2"><h2>Sholay</h2><a href="details.html" class="poster-link"><img src="images/thumbs/11.png" alt=""></a></article>
+								<article class="item thumb span-2"><h2>Don</h2><a href="details.html" class="poster-link"><img src="images/thumbs/12.png" alt=""></a></article>
+								<article class="item thumb span-1"><h2>Kal Ho Na Ho</h2><a href="details.html" class="poster-link"><img src="images/thumbs/13.png" alt=""></a></article>
+								<article class="item thumb span-2"><h2>Agneepath</h2><a href="details.html" class="poster-link"><img src="images/thumbs/14.png" alt=""></a></article>
+								<article class="item thumb span-1"><h2>Coolie</h2><a href="details.html" class="poster-link"><img src="images/thumbs/15.png" alt=""></a></article>
+						
+							</div>
+
+					</section>
+
+					
+				<!-- Footer -->
+					<section id="credits" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #222; z-index: 10000; text-align: center; border-top: 2px solid #e50914; padding: 10px 0;">
+    <h4 style="margin: 0; font-size: 0.9em; color: #fff;">TEAM 1 PRODUCTION</h4>
+    <p style="margin: 0; letter-spacing: 2px; text-transform: uppercase; font-size: 0.7em; color: #ccc;">
+        Zach • Ben • Manny • Het • Ireh • Kay
+    </p>
+    <p style="margin: 0; font-size: 0.6em; color: #aaa;">
+        COURSE: MODERN SOFTWARE DEVELOPMENT | SUPERVISOR: DR. BILLY SPANN
+    </p>
+</section>
+							
+						
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
